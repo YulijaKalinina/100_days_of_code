@@ -36,14 +36,12 @@ else:
     user_choice = choices[int(user_input)]
     print(f"Your choice:\n{user_choice}")
     print(f"Computer's choice:\n{computer_choice}")
-    if user_choice == rock and computer_choice == scissors or \
+    if user_choice == computer_choice:
+        print("It's a draw!")
+    elif user_choice == rock and computer_choice == scissors or \
             user_choice == paper and computer_choice == rock or \
         user_choice == scissors and computer_choice == paper:
             print("You win!")
-    elif user_choice == rock and computer_choice == paper or \
-        user_choice == paper and computer_choice == scissors or \
-        user_choice == scissors and computer_choice == rock:
-            print("You lose!")
     else:
-        print("It's a draw!")
+        print("You lose!")
 
